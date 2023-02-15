@@ -12,10 +12,11 @@ class MakeCalls:
         """
         self.url = url
         self.headers = {"Content-Type": "application/json"}
-        self.service_port_mapping = {'sentiment' : 8001,
-                                     'chat_summary' : 8002,
+        self.service_port_mapping = {'chat_summary' : 8001,
+                                     'topic' : 8002,
                                      'knowledge_search' : 8003,
-                                     'topic' : 8004}
+                                     'ner' : 8004,
+                                     'sentiment' : 8005,}
 
     def model_list(self, service: str) -> dict:
         """
@@ -63,21 +64,21 @@ class Display:
         self.service_options = st.sidebar.selectbox(
             label="",
             options=[
-                "Project NI 4 Conv",
-                "Sentiment Analysis",
-                "Named Entity Recognition",
-                "Knowledge Search",
+                "Project NLP Intel 4 Conv",
                 "Chat Summarization",
-                "Chat Topic"
+                "Chat Topic",
+                "Knowledge Search",
+                "Chat Entities",
+                "Chat Sentiment",
             ],
         )
         self.service = {
-            "Project NI 4 Conv": "about",
-            "Sentiment Analysis": "sentiment",
-            "Named Entity Recognition": "ner",
-            "Knowledge Search": "knowledge_search",
+            "Project NLP Intel 4 Conv": "about",
             "Chat Summarization": "chat_summary",
-            "Chat Topic" : "topic"
+            "Chat Topic" : "topic",
+            "Knowledge Search": "knowledge_search",
+            "Chat Entities": "ner",
+            "Chat Sentiment": "sentiment"
         }
 
     def static_elements(self):
