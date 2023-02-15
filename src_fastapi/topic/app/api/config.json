@@ -1,0 +1,11 @@
+{
+    "model-1": {
+        "name": "GPT-3",
+        "info": "GPT-3 model from OpenAI"
+    },
+    "model-2":{
+        "name": "HF Models",
+        "info": "Open Source Models from Huggingface"
+    }
+
+}
