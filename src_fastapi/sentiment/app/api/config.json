@@ -1,0 +1,6 @@
+{
+    "model-1": {
+        "name": "RoBERTa",
+        "info": "This is a roBERTa-base model trained on ~58M tweets and finetuned for sentiment analysis with the TweetEval benchmark. \n This model is suitable for English (for a similar multilingual model, see XLM-T). \n Reference Paper: TweetEval (Findings of EMNLP 2020). \n Git Repo: Tweeteval official repository. \n Labels: 0 -> Negative; 1 -> Neutral; 2 -> Positive"
+    }
+}
