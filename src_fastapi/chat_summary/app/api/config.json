@@ -1,0 +1,10 @@
+{
+    "model-1": {
+        "name": "BART",
+        "info": "This model is fine-tuned on CNN and samsum dataset"
+    },
+    "model-2": {
+        "name": "GPT-3",
+        "info": "GPT-3 model from OpenAI"
+    }
+}
